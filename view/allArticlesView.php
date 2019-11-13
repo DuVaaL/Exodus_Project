@@ -1,11 +1,11 @@
 <?php ob_start() ?>
 
-<?php while($data = $posts->fetch()){
+<?php while($data = $page->fetch()){
             $title = 'Exodus · Site d\'information hightech';
     ?>
                      <article>
                             <div class="img-content">
-                            <a href=""> <img src="http://localhost/projets/exodus/public/img/<?= $data['img'];?>" alt=""></a>
+                                <a href=""> <img src="http://localhost/projets/exodus/public/img/<?= $data['img'];?>" alt=""></a>
                             </div>
                             <div class="text-box">
                                 <h3 class="post-title" >
@@ -20,12 +20,9 @@
 
     <?php
       }
-        $posts->closeCursor();
+        $page->closeCursor();
     ?>
-    <div class="more-article" >
-         <a href="index.php?action=otherPage"><h4>Tous les articles</h4></a>
-    </div>
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require('template.php') ; ?>
+<?php require('template3.php') ; ?>
