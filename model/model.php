@@ -3,7 +3,7 @@
 function getArticles()
 {
     $pdo = db_connect();
-    $req = $pdo->query('SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM articles ORDER BY creation_date DESC LIMIT 0, 10');
+    $req = $pdo->query('SELECT id, title, content, img, DATE_FORMAT(creation_date, \'%d/%m/%Y à %H:%i\') as creation_date_fr from articles order by creation_date DESC LIMIT 0, 10');
 
     return $req;
 }
@@ -11,7 +11,7 @@ function getArticles()
 function getArticle($id_article)
 {
     $pdo =  db_connect();
-    $req = $pdo->prepare('SELECT id,title,content, all_content, date_format(creation_date, \' Mis à jour le %d/%m/%y à %hH/%iMin/%ss\') as creation_date_fr from articles where id = ? ');
+    $req = $pdo->prepare('SELECT id,title,content, all_content,img_in, date_format(creation_date, \' Mis à jour le %d/%m/%y à %H:%i\') as creation_date_fr from articles where id = ? ');
     $req->execute(array($_GET['id']));
     $article = $req->fetch();
 
@@ -21,11 +21,19 @@ function getArticle($id_article)
 function getComments($id_article)
 {
   $pdo = db_connect();
-  $req = $pdo->prepare('SELECT id,author,comments,email, date_format(comments_date, \'%d/%m/%y à %hH/%iMin/%ss\') as comments_date_fr from comments where id_article = ? order by comments_date desc ');
+  $req = $pdo->prepare('SELECT id,author,comments,email, date_format(comments_date, \'%d/%m/%y à %H:%i\') as comments_date_fr from comments where id_article = ? order by comments_date desc ');
   $req->execute(array($id_article));
   $comments = $req;
 
   return $comments ;
+}
+
+function getOther_page()
+{
+  $pdo = db_connect();
+  $req = $pdo->query('SELECT * from articles order by creation_date desc');
+
+   return $req;
 }
 
 function getTrends()
@@ -44,6 +52,15 @@ function getTrend($id_trend)
     $trend = $req->fetch();
 
     return $trend ; 
+}
+
+function post_comment($id_article, $author, $comment, $email)
+{
+    $pdo = db_connect();
+    $comments = $pdo->prepare('INSERT INTO comments(id_article, author, comments,email,comments_date) VALUES(?, ?, ?, ?, NOW())');
+    $result= $comments->execute(array($id_article, $author, $comment, $email));
+
+    return $result;
 }
   
 
