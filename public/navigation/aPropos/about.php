@@ -17,6 +17,10 @@
             line-height: normal; 
             margin-bottom: 37px;
         }
+
+        .nav-menu li{
+            font-size: 17px;
+        }
         body{
             height: 400px;
         }
@@ -31,15 +35,24 @@
         footer{
             height: 220;
         }
-        
-        
-        
          
         @media screen and (min-width : 412px) and (max-width : 415px)
         {
-            footer {
-                height: 360;
+            p.upp{
+                font-size: 17px;
             }
+            header{
+                margin-bottom: 15px;
+            }
+            footer {
+                height: 460;
+            }
+
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+             }
+    
             
             footer input[type=email]{
             text-align: center;
@@ -62,8 +75,14 @@
         @media screen and (min-width : 374px) and (max-width : 398px)
         {
             footer {
-                height: 370;
+                height: 470;
             }
+
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+            }
+    
             
             footer input[type=email]{
             text-align: center;
@@ -85,9 +104,18 @@
         
         @media screen and (min-width : 358px) and (max-width : 362px)
         {
-            footer {
-                height: 370;
+            p.upp{
+                font-size: 17px;
             }
+            footer {
+                height: 470;
+            }
+
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+            }
+    
             
             footer input[type=email]{
             text-align: center;
@@ -109,10 +137,18 @@
         
         @media screen and (min-width : 318px) and (max-width : 322px)
         {
-             footer {
-                height: 350;
+            p.upp{
+                font-size: 17px;
             }
-            
+             footer {
+                height: 485;
+            }
+
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+            }
+    
             footer input[type=email]{
             text-align: center;
             background-color: rgb(248,248,248);
@@ -143,16 +179,16 @@
     <div id="main-bloc" class="container-fluid ">
         <div class="row">
             <header class=" col-12  ">
-                <div class="logo"><a href="index.php">Exodus</a></div>
+                <div class="logo"><a href="/projets/exodus/index.php">Exodus</a></div>
                 <ul>
                     <li class="button  show_menu "> + </li>
                 </ul>
                 <div class="nav-menu">
                     <ul>
-                        <li><a href="/projets/exodus/index.php">Accueil</a></li>
-                        <li><a href="/projets/exodus/index.php#Actu">Actu</a></li>
+                        <li><a href="http://localhost/projets/exodus">Accueil</a></li>
+                        <li><a href="http://localhost/projets/exodus/index.php#Actu">Actu</a></li>
                         <li><a href="#">A Propos</a></li>
-                        <li><a href="/projets/exodus/public/navigation/contact/contact.php">Contact</a></li>
+                        <li><a href="http://localhost/projets/exodus/public/navigation/contact/contact.php">Contact</a></li>
                     </ul>
 
                 </div>
@@ -179,10 +215,10 @@
                         <h4>exodus</h4>
                      <div class="footer-nav-list" >
                         <ul class="footer-nav" >
-                            <li><a href="/projets/exodus/public/navigation/auteurs/author.php">Integrer l'équipe</a></li>
-                            <li><a href="/projets/exodus/public/navigation/contact/contact.php">Contact</a></li>
+                            <li><a href="http://localhost/projets/exodus/public/navigation/auteurs/author.php">Integrer l'équipe</a></li>
+                            <li><a href="http://localhost/projets/exodus/public/navigation/contact/contact.php">Contact</a></li>
                             <li><a href="#">A Propos</a></li>
-                            <li><a href="/projets/exodus/public/navigation/aPropos/about.php">Mentions légales</a></li>
+                            <li><a href="http://localhost/projets/exodus/public/navigation/aPropos/about.php">Mentions légales</a></li>
                         </ul>
                      </div>
                    </div>

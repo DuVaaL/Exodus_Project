@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="public/fontawesome.min.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta name="description" content="hightech, android, smartphone">
     
@@ -48,10 +48,25 @@
         
         @media screen and (min-width : 412px) and (max-width : 415px)
         {
-            footer {
-                height: 400;
+            h1{
+                font-size: 30px;
             }
-            
+             p.upp{
+                font-size: 17px;
+             }
+
+            h2.title-contact{
+                font-size: 20px;
+            }
+            footer {
+                height: 485;
+            }
+
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+            }
+    
             footer input[type=email]{
             text-align: center;
             background-color: rgb(248,248,248);
@@ -72,10 +87,26 @@
         
         @media screen and (min-width : 374px) and (max-width : 398px)
         {
-            footer {
-                height: 400;
+            h1{
+                font-size: 30px;
             }
-            
+             p.upp{
+                font-size: 17px;
+             }
+
+            h2.title-contact{
+                font-size: 20px;
+            }
+
+            footer {
+                height: 485;
+            }
+
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+            }
+    
             footer input[type=email]{
             text-align: center;
             background-color: rgb(248,248,248);
@@ -96,14 +127,29 @@
         
         @media screen and (min-width : 358px) and (max-width : 362px)
         {
+            h1{
+                font-size: 30px;
+            }
+             p.upp{
+                font-size: 17px;
+             }
+
+            h2.title-contact{
+                font-size: 20px;
+            }
             footer {
-                height: 400;
+                height: 485;
             }
             
+            footer .footer-nav li{
+                margin: 0;
+                padding: 0;
+            }
+    
             footer input[type=email]{
             text-align: center;
             background-color: rgb(248,248,248);
-            margin: 0 5%;
+            margin: 0 3%;
             height: 25px;
             width: 320px;
               }
@@ -120,10 +166,25 @@
         
         @media screen and (min-width : 318px) and (max-width : 322px)
         {
-             footer {
-                height: 350;
+            h1{
+                font-size: 30px;
             }
-            
+             p.upp{
+                font-size: 17px;
+             }
+
+            h2.title-contact{
+                font-size: 20px;
+            }
+             footer {
+                height: 515;
+            }
+
+            footer .footer-nav li{
+                    margin: 0;
+                    padding: 0;
+                }
+    
             footer input[type=email]{
             text-align: center;
             background-color: rgb(248,248,248);
@@ -154,15 +215,15 @@
     <div id="main-bloc" class="container-fluid ">
         <div class="row">
             <header class=" col-12  ">
-                <div class="logo"><a href="index.php">Exodus</a></div>
+                <div class="logo"><a href="/projets/exodus/index.php">Exodus</a></div>
                 <ul>
                     <li class="button  show_menu "> + </li>
                 </ul>
                 <div class="nav-menu">
                     <ul>
-                        <li><a href="/projets/exodus/index.php">Accueil</a></li>
-                        <li><a href="/projets/exodus/index.php#Actu">Actu</a></li>
-                        <li><a href="/projets/exodus/public/navigation/apropos/about.php">A Propos</a></li>
+                        <li><a href="http://localhost/projets/exodus">Accueil</a></li>
+                        <li><a href="http://localhost/projets/exodus/index.php#Actu">Actu</a></li>
+                        <li><a href="http://localhost/projets/exodus/public/navigation/apropos/about.php">A Propos</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
 
@@ -180,16 +241,16 @@
         
         <div id="contact-form">
     <form action="contact_post.php" method="post">
-           <div class="input-field">
-            <input name="contact_email" type="email" required>
-            <label for="contact_email">Votre adresse mail *</label>
-           </div>
         <div class="input-field">
-            <input name="contact_name" type="text" required>
+            <input name="name" type="text" required>
             <label for="contact_name">Votre nom *</label>
         </div>
         <div class="input-field">
-            <select class="browser-default">
+            <input name="email" type="email" required>
+            <label for="contact_email">Votre adresse mail *</label>
+           </div>
+        <div class="input-field">
+            <select class="browser-default" name="object" >
                 <option value="" selected disabled>Objet du message *</option>
                 <option value="Question">Question</option>
                 <option value="Suggestion d’article">Suggestion d’article, de sujet</option>
@@ -203,7 +264,7 @@
         </div>
 
         <div class="input-field">
-            <textarea name="contact_message" rows="5" cols="40" ></textarea>
+            <textarea name="message" rows="5" cols="40" ></textarea>
             <label for="contact_message">Votre message *</label>
         </div>
             
@@ -230,7 +291,7 @@
             </div>    
             <div class="item-newletter" >
                <div class="newletter" >
-                    <p class="upp" >Restez au courant de l'actu à travers notre Newletter </p>
+                    <p>Restez au courant de l'actu à travers notre Newletter </p>
                 <label for="email"> <input type="email" name="email" placeholder="email" > </label>
                 <input type="submit" value="Envoyer">
                </div>

@@ -134,11 +134,11 @@ header .logo a{
 }
 
 a .box_img_1{
-    background-image: url(img/ecosystemeMac.jpg) ;
+    background-image: url(img/roll_smartphones.jpg) ;
 }
 
 a .box_img_2{
-    background-image: url(img/airpods-apple.jpg) ;
+    background-image: url(img/ia.jpg) ;
 }
 
 a .box_img_3{
@@ -146,7 +146,7 @@ a .box_img_3{
 }
 
 a .box_img_4{
-    background-image: url(img/cameraContemporain.jpg) ;
+    background-image: url(img/5g-illustration.jpg) ;
 }
 
 a .box_img_1:hover,a .box_img_2:hover,a .box_img_3:hover,a .box_img_4:hover{
@@ -213,10 +213,15 @@ article .text-box{
     font-family: "Product";
 }
 
+.head1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .head{
-    margin-top: 15px;
-    margin-bottom: 25px;    
-    padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+    padding-top: 10px;
 }
 
 .title-content{
@@ -474,7 +479,7 @@ footer input[type=submit]{
         margin-left: 18%;
     }
     
-    section#contents .title-content{
+    section#contents .title-content, .head1 .title-content {
         font-size: 25px;
         text-align: center;
     }
@@ -598,7 +603,7 @@ footer input[type=submit]{
     }
     
     .footer-nav-list{
-        margin: 0 5px;
+        margin: 0 1px;
         display: block;
         width: 100%;
     }
@@ -609,7 +614,12 @@ footer input[type=submit]{
     }
     
     footer .footer-nav{
-        margin-bottom: 5px;
+        margin-bottom: 1px;
+    }
+
+    footer .footer-nav li{
+        margin: 0;
+        padding: 0;
     }
     
     footer input[type=email]{
@@ -761,7 +771,7 @@ footer input[type=submit]{
 
     #contents .line-down{
     border-bottom: 1px solid #2ecc71;
-    margin: 300px  0 30px 0 ;  
+    margin: 350px  0 30px 0 ;  
     }
     
     #contents .line-up{

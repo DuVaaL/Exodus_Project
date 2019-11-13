@@ -1,5 +1,5 @@
 <header class=" col-12  ">
-                <div class="logo"><a href="index.php">Exodus</a></div>
+                <div class="logo"><a href="../index.php">Exodus</a></div>
                 <ul>
                     <li class="button  show_menu "> + </li>
                 </ul>
@@ -7,8 +7,8 @@
                     <ul>
                         <li><a href="/projets/exodus/index.php">Accueil</a></li>
                         <li><a href="/projets/exodus/index.php#Actu">Actu</a></li>
-                        <li><a href="/projets/exodus/public/navigation/aPropos/about.php">A Propos</a></li>
-                        <li><a href="/projets/exodus/public/navigation/contact/contact.php">Contact</a></li>
+                        <li><a href="../navigation/aPropos/about.php">A Propos</a></li>
+                        <li><a href="../navigation/contact/contact.php">Contact</a></li>
                     </ul>
 
                 </div>

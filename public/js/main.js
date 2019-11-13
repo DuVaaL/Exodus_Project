@@ -7,6 +7,12 @@ $(document).ready(function()
 		$('.nav-menu').slideToggle();
         $('#main_page').slideToggle();
 	});
+
+	//object "Show last article"
+	$('#Actu').click(function()
+	{
+		$('.nav-menu').slideUp();
+	});
     
     
 })
