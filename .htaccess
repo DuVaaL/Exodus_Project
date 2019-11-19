@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteRule ^action/article/([0-9]+)$    \?action=article&id=$1
+
+RewriteRule ^all_pages$  ?action=otherPage
+
+RewriteRule ^trends/les_telephones_pliables$   public/trends/les_telephones_pliables.php
+
+RewriteRule ^trends/comment_choisir_son_smartphone$  public/trends/guide_comment_choisir_son_smartphone.php
+
+RewriteRule ^trends/tout_savoir_sur_l_intelligence_artificielle$  public/trends/l_intelligence_artificielle.php
+
+RewriteRule ^trends/tout_savoir_sur_la_5g$  public/trends/la_5g.php
+
+RewriteRule ^about$     /public/navigation/aPropos/about.php
+
+RewriteRule ^contact$    /public/navigation/contact/contact.php
+
+RewriteRule ^join_us$    /public/navigation/auteurs/author.php
