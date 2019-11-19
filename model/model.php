@@ -3,6 +3,7 @@
 function getArticles()
 {
     $pdo = db_connect();
+
     $req = $pdo->query('SELECT id, title, content, img, DATE_FORMAT(creation_date, \'%d/%m/%Y à %H:%i\') as creation_date_fr from articles order by creation_date DESC LIMIT 0, 10');
 
     return $req;
@@ -68,7 +69,7 @@ function db_connect()
 {
   try
     {
-     $pdo = new PDO('mysql:host=localhost;dbname=exodus;charset=utf8','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+      $pdo = new PDO('mysql:host=sql304.byethost.com;dbname=b7_24770145_Exodus;charset=utf8','b7_24770145','Agentcodybanks21',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
         return $pdo ;
     }

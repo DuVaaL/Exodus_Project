@@ -1,6 +1,6 @@
 <?php
 try {
-	$pdo = new PDO('mysql:host=localhost;dbname=exodus;charset=utf8','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+	$pdo = new PDO('mysql:host=sql304.byethost.com;dbname=b7_24770145_Exodus;charset=utf8','b7_24770145','Agentcodybanks21',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	$header = "MIME Version 1.0\r\n";
 	$header.='From:"Exodus"<exodus@proton.com>'."\n";
 	$header.='Content-Type:text/html; charset="uft-8"'."\n";
