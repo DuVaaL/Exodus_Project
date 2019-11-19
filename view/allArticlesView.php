@@ -5,11 +5,11 @@
     ?>
                      <article>
                             <div class="img-content">
-                                <a href=""> <img src="http://localhost/projets/exodus/public/img/<?= $data['img'];?>" alt=""></a>
+                                <a href=""> <img src="public/img/<?= $data['img'];?>" alt=""></a>
                             </div>
                             <div class="text-box">
                                 <h3 class="post-title" >
-                                    <a href="index.php?action=article&amp;id=<?= $data['id']?>"> <?= $data['title']?>.</a>
+                                    <a href="action/article/<?= $data['id']?>"> <?= $data['title']?>.</a>
                                 </h3>
                                 <p>
                                     <?= $data['content'] ?>

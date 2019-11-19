@@ -2,11 +2,10 @@
 <head>
     <meta charset="utf-8">
     <title> <?= $title ?>  </title>
-    <link rel="stylesheet" href="public/style.css">
-    <link rel="icon" href="public/img/logomoac.png">
-    <link rel="stylesheet" href="public/bootstrap-grid.css">
-    <link rel="stylesheet" href="public/bootstrap.css">
-    <link rel="stylesheet" href="public/fontawesome.min.css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" href="/public/img/LogoMoac.png">
+    <link rel="stylesheet" href="/public/bootstrap-grid.css">
+    <link rel="stylesheet" href="/public/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta name="description" content="hightech, android, smartphone">
@@ -52,7 +51,16 @@
 
   #contents{
     width: 342;
+    font-size: 15px;
    }
+
+   #contents h2{
+    font-size: 20px;
+    text-align: center;
+   }
+   #contents h1{
+      font-size: 25px;
+    }
 
    textarea{
     width: 295;
@@ -74,6 +82,7 @@
   }
   #contents{
     width: 370;
+    font-size: 15px;
    }
 
    #contents img{
@@ -84,6 +93,9 @@
     #contents h2{
         font-size: 20px;
         text-align: center;
+    }
+    #contents h1{
+      font-size: 25px;
     }
 
     #contents img{
@@ -109,11 +121,15 @@
     padding: 0;
     margin: 0;
     width: 408;
+    font-size: 15px;
    }
 
     #contents h2{
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
+    }
+    #contents h1{
+      font-size: 25px;
     }
 
     #contents img{
@@ -135,6 +151,7 @@
   }
   #contents{
     width: 310;
+    font-size: 15px;
    }
 
    #contents img{
@@ -143,13 +160,16 @@
       margin-left: 0;
     }
     #contents h2{
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
+    }
+    #contents h1{
+      font-size: 25px;
     }
 
     #contents img{
-      width: 340;
-      height: 265;
+      width: 300;
+      height: 245;
       margin-left: 0;
     }
     
@@ -182,8 +202,8 @@
     
         <?php require('footer.php' ); ?>
         
-    <script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="public/js/main.js"></script>
+    <script type="text/javascript" src="/public/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/main.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 		<h2><?= $post_article['title'];?> </h2><br>
 		<div>
-			<img src="public/img/<?= $post_article['img_in'] ;?>" alt="">
+			<img class="reduce" src="/public/img/<?= $post_article['img_in'] ;?>" alt="">
 		</div><br>
          <p>	
             <?= $post_article['all_content'];?> <br>
@@ -15,7 +15,7 @@
 					<h1>Commentaires </h1>
 
 				<p>
-					<form action="index.php?action=addComment&amp;id=<?= $post_article['id'];?>" method="POST">
+					<form action="/index.php?action=addComment&amp;id=<?= $post_article['id'];?>" method="POST">
 						<div>
 						     <label for="author">Auteur</label><br />
 						     <input type="text" name="author" />

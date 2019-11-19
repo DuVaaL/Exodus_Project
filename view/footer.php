@@ -1,7 +1,6 @@
 <?php 
      try
-    {
-     $pdo = new PDO('mysql:host=localhost;dbname=exodus;charset=utf8','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    {$pdo = new PDO('mysql:host=sql304.byethost.com;dbname=b7_24770145_Exodus;charset=utf8','b7_24770145','Agentcodybanks21',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
    if (isset($_POST['email']) and $_POST['email'] != null) 
      {
         $requser=$pdo->prepare('INSERT INTO newsletter(email, date_inscription) VALUES( ?,NOW())');
@@ -22,10 +21,10 @@
                         <h4>exodus</h4>
                      <div class="footer-nav-list" >
                         <ul class="footer-nav" >
-                            <li><a href="public/navigation/auteurs/author.php">Integrer l'equipe</a></li>
-                            <li><a href="public/navigation/contact/contact.php">Contact</a></li>
-                            <li><a href="public/navigation/aPropos/about.php">A Propos</a></li>
-                            <li><a href="public/navigation/aPropos/about.php">Mentions légales</a></li>
+                            <li><a href="/join_us">Integrer l'equipe</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/about">A Propos</a></li>
+                            <li><a href="/about">Mentions légales</a></li>
                         </ul>
                      </div>
                    </div>
